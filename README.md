@@ -8,7 +8,7 @@
 
 Built for the [All Things Agentic Hackathon](https://allthingsagentichackathon.devpost.com/) · **Taskmaster category** · Android
 
-Demo video: [Watch the public demo on YouTube](https://www.youtube.com/watch?v=y6o_GCJuzhM)
+Demo video: [Watch the public demo on YouTube](https://www.youtube.com/watch?v=oayahfbwNLI)
 
 Public Google Cloud verification: [Open the Cloud Run service](https://family-vlog-evidence-513339907677.us-central1.run.app/) · [View the frozen aggregate evidence](https://family-vlog-evidence-513339907677.us-central1.run.app/v1/evidence/latest)
 
@@ -62,7 +62,7 @@ The model-call count is therefore **not fixed at two for an entire run**. There 
 
 ## Architecture
 
-![Family Vlog Agent end-to-end technical workflow](workflow-reveal-readme.gif)
+![Family Vlog Agent end-to-end technical workflow with Cloud Run evidence plane](docs/assets/family-vlog-workflow-adk-v3-cloud-run.png)
 
 The boundary is deliberate: Google-managed cloud services perform semantic video understanding and structured story planning; the custom Firebase model bridge, ADK orchestration, validation, source/time restoration, Media3 execution, storage, and final export remain in the Android application. The repository contains no project-owned cloud media store or remote renderer.
 
