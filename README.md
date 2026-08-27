@@ -8,7 +8,7 @@
 
 Built for the [All Things Agentic Hackathon](https://allthingsagentichackathon.devpost.com/) · **Taskmaster category** · Android
 
-Demo video: [Watch the public demo on YouTube](https://www.youtube.com/watch?v=y9qx6zawUao)
+Demo video: [Watch the public demo on YouTube](https://www.youtube.com/watch?v=y6o_GCJuzhM)
 
 Public Google Cloud verification: [Open the Cloud Run service](https://family-vlog-evidence-513339907677.us-central1.run.app/) · [View the frozen aggregate evidence](https://family-vlog-evidence-513339907677.us-central1.run.app/v1/evidence/latest)
 
