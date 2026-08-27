@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "run": {
+    "run_id": "run-4af3fb61-7b61-49e0-becd-84f0de0480a3",
+    "application_id": "com.chill.familyvlog",
+    "device_adb_serial": "192.168.3.78:46245",
+    "device_model": "2412DPC0AG",
+    "device_product": "rodin_global",
+    "device_timezone": "Asia/Ho_Chi_Minh",
+    "google_cloud_project_id": "familyvlog-a8a84",
+    "model_id": "gemini-3.6-flash",
+    "model_location": "global"
+  },
+  "content": {
+    "original_source_count": 4,
+    "original_source_duration_s": 46.796666,
+    "prepared_video_window_count": 6,
+    "prepared_video_window_duration_s": 50.529999,
+    "window_overlap_overhead_s": 3.733333,
+    "identified_event_count": 11,
+    "selected_event_count": 5,
+    "planned_output_duration_s": 20.866667,
+    "actual_output_duration_s_from_mediastore": 20.895,
+    "unique_selected_source_timeline_s": 20.133333,
+    "omitted_unique_source_timeline_s": 26.663333,
+    "repeated_selected_overlap_s": 0.733334
+  },
+  "milestones": [
+    {
+      "id": "activity_created",
+      "timestamp_utc": "2026-08-26T22:56:33.499Z",
+      "epoch_s": 1787784993.499,
+      "evidence": "device/logcat-correlated-excerpt.txt",
+      "evidence_type": "direct_android_log"
+    },
+    {
+      "id": "photo_picker_launched",
+      "timestamp_utc": "2026-08-26T22:58:06.397Z",
+      "epoch_s": 1787785086.397,
+      "evidence": "device/logcat-correlated-excerpt.txt",
+      "evidence_type": "direct_android_log"
+    },
+    {
+      "id": "photo_picker_result_returned",
+      "timestamp_utc": "2026-08-26T22:58:16.175Z",
+      "epoch_s": 1787785096.175,
+      "evidence": "device/logcat-correlated-excerpt.txt",
+      "evidence_type": "direct_android_log"
+    },
+    {
+      "id": "likely_create_vlog_interaction",
+      "timestamp_utc": "2026-08-26T22:58:16.910Z",
+      "epoch_s": 1787785096.910,
+      "evidence": "device/logcat-correlated-excerpt.txt",
+      "evidence_type": "time_correlation_inference",
+      "limitation": "Android logs the touch interaction with MainActivity but not the touched control name."
+    },
+    {
+      "id": "first_cloud_request",
+      "timestamp_utc": "2026-08-26T22:58:39.955685Z",
+      "epoch_s": 1787785119.955685,
+      "evidence": "google-cloud/activity-log.sanitized.json",
+      "evidence_type": "direct_cloud_log"
+    },
+    {
+      "id": "final_story_plan_choice",
+      "timestamp_utc": "2026-08-26T23:01:51.048492Z",
+      "epoch_s": 1787785311.048492,
+      "evidence": "google-cloud/activity-log.sanitized.json",
+      "evidence_type": "direct_cloud_log"
+    },
+    {
+      "id": "device_run_json_files_written",
+      "timestamp_utc": "2026-08-26T23:01:51.161913947Z",
+      "epoch_s": 1787785311.161913947,
+      "evidence": "device/run-files-stat.txt",
+      "evidence_type": "direct_device_file_metadata"
+    },
+    {
+      "id": "original_output_file_modified",
+      "timestamp_utc": "2026-08-26T23:01:57.249913948Z",
+      "epoch_s": 1787785317.249913948,
+      "evidence": "device/original-output-stat.txt",
+      "evidence_type": "direct_device_file_metadata"
+    },
+    {
+      "id": "first_time_correlated_subtitle_media_signal",
+      "timestamp_utc": "2026-08-26T23:02:04.101Z",
+      "epoch_s": 1787785324.101,
+      "evidence": "device/logcat-correlated-excerpt.txt",
+      "evidence_type": "time_correlation_inference",
+      "limitation": "This mediaserver signal is time-correlated but does not carry the app package or a subtitle-stage label."
+    },
+    {
+      "id": "subtitled_output_file_modified",
+      "timestamp_utc": "2026-08-26T23:02:14.345913949Z",
+      "epoch_s": 1787785334.345913949,
+      "evidence": "device/subtitled-output-stat.txt",
+      "evidence_type": "direct_device_file_metadata"
+    }
+  ],
+  "derived_intervals_s": {
+    "likely_create_interaction_to_first_cloud_request": 23.045685,
+    "likely_create_interaction_to_original_output_file": 220.339913948,
+    "first_cloud_request_to_final_story_plan_choice": 191.092807,
+    "summed_cloud_request_to_choice_spans": 75.535327,
+    "between_call_and_phone_processing_gaps": 115.557480,
+    "final_story_plan_choice_to_device_json_files": 0.113421947,
+    "final_story_plan_choice_to_original_output_file": 6.201421948,
+    "device_json_files_to_original_output_file": 6.088000001,
+    "original_output_file_to_subtitled_output_file": 17.096000001,
+    "time_correlated_subtitle_media_signal_to_subtitled_output_file": 10.244913949,
+    "device_json_files_to_subtitled_output_file": 23.184000002,
+    "final_story_plan_choice_to_subtitled_output_file": 23.297421949
+  },
+  "timing_notes": [
+    "The 3 min 40.3 s headline is the likely Create Vlog interaction to the original output file mtime.",
+    "The 75.5 s AI headline is the sum of seven Cloud activity request-to-choice spans, not pure accelerator compute time.",
+    "The 23.2 s local headline rounds the device JSON write to optional subtitled-output mtime interval of 23.184 s; it includes the original edit and the later subtitle copy and therefore has a later endpoint than the 3 min 40.3 s original-output measurement.",
+    "The app has no success-path business log marking subtitle start, so 17.096 s is the directly observable original-output to subtitled-output interval; 10.245 s uses a time-correlated system media signal and is explicitly an inference."
+  ]
+}

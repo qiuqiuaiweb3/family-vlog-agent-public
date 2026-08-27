@@ -1,0 +1,9 @@
+         1787784993.499  2158  3443 I wm_create_activity: [0,150737501,1482,com.chill.familyvlog/.MainActivity,NULL,NULL,NULL,272629760]
+         1787784993.577 30742 30742 I wm_on_create_called: [0,150737501,com.chill.familyvlog.MainActivity,performCreate,12]
+         1787785086.397  2158  2220 I wm_activity_launch_time: [0,238697599,com.google.android.photopicker/com.android.photopicker.MainActivity,288]
+         1787785096.175 30742 30742 I wm_on_activity_result_called: [0,150737501,com.chill.familyvlog.MainActivity,ACTIVITY_RESULT,1]
+         1787785096.175 30742 30742 I wm_on_resume_called: [0,150737501,com.chill.familyvlog.MainActivity,RESUME_ACTIVITY,0]
+         1787785096.910  2158  2605 I input_interaction: Interaction with: [1b338bb com.chill.familyvlog/com.chill.familyvlog.MainActivity,{touchableRegion=[0,0][1220,2712], inputConfig=0x0}, [Gesture Monitor] WMShell,[Gesture Monitor] miui-gesture,PointerEventDispatcher0], on displayId 0
+         1787785311.425     1     1 I auditd  : type=1107 audit(0.0:960640): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc:  denied  { set } for property=vendor.video.scene.recognition pid=1491 uid=1046 gid=1000 scontext=u:r:hal_videoservice_default:s0 tcontext=u:object_r:vendor_default_prop:s0 tclass=property_service permissive=0'
+         1787785324.101  1841  1841 I auditd  : type=1400 audit(0.0:960656): avc:  denied  { read } for  comm="binder:1841_6" name="u:object_r:vendor_default_prop:s0" dev="tmpfs" ino=570 scontext=u:r:mediaserver:s0 tcontext=u:object_r:vendor_default_prop:s0 tclass=file permissive=0
+         1787785338.181  2158  2220 I sysui_multi_action: [319,299,322,297,325,841522,757,761,758,7,759,2,806,com.android.intentresolver,871,com.android.intentresolver.ResolverActivity,904,com.chill.familyvlog,905,0,945,91,1320,8,1321,5]

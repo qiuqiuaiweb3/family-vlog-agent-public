@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "source_file": "activity-log.sanitized.json",
+  "capture_timestamp_utc": "2026-08-27T19:28:01Z",
+  "project_id": "familyvlog-a8a84",
+  "log_name": "projects/familyvlog-a8a84/logs/firebasevertexai.googleapis.com%2Factivity",
+  "query_window_utc": {
+    "start_inclusive": "2026-08-26T22:58:30Z",
+    "end_inclusive": "2026-08-26T23:02:00Z"
+  },
+  "model": {
+    "publisher": "google",
+    "id": "gemini-3.6-flash",
+    "location": "global",
+    "backend_label": "gcp.vertex_ai"
+  },
+  "record_counts": {
+    "total": 21,
+    "system_messages": 7,
+    "user_messages": 7,
+    "model_choices": 7,
+    "distinct_traces": 7
+  },
+  "calls": [
+    {
+      "trace": "projects/familyvlog-a8a84/traces/0fcb9604652d9b65f9d8395ac7111606",
+      "span_id": "ca40053624a77c15",
+      "request_timestamp_utc": "2026-08-26T22:58:39.955685Z",
+      "response_timestamp_utc": "2026-08-26T22:58:48.674098Z",
+      "finish_reason": "stop",
+      "input_media_fingerprint": "video/mp4<sha5120e317e2a15fd201024a9704ca74a785a0d9d5c242bdbb281b2089c8c00ff22cbf5a9206ed1459d04eb6faf119cf4a68430f26a92c6a3549995b2b5947ef45cc5>",
+      "sequence": 1,
+      "stage": "video_understanding",
+      "observed_request_to_choice_s": 8.718413
+    },
+    {
+      "trace": "projects/familyvlog-a8a84/traces/9b395fd8de55acf1a8722111fe0edfcd",
+      "span_id": "855d7f0d1e73a22c",
+      "request_timestamp_utc": "2026-08-26T22:59:21.005360Z",
+      "response_timestamp_utc": "2026-08-26T22:59:30.516879Z",
+      "finish_reason": "stop",
+      "input_media_fingerprint": "video/mp4<sha51263faef8cceb8f7f1c7177aff53ec0f9bb7a047afd91a08c312b9a6b558a9f8b4921e53391caf23fefaa3a6b73b0e94f4c63b58432d928c6b54ca0fbb08c952fd>",
+      "sequence": 2,
+      "stage": "video_understanding",
+      "observed_request_to_choice_s": 9.511519
+    },
+    {
+      "trace": "projects/familyvlog-a8a84/traces/fed1ae379895303733bb6ff4626a4b87",
+      "span_id": "5177f07d06f3f265",
+      "request_timestamp_utc": "2026-08-26T22:59:39.015756Z",
+      "response_timestamp_utc": "2026-08-26T22:59:51.817639Z",
+      "finish_reason": "stop",
+      "input_media_fingerprint": "video/mp4<sha5128c5593e48921fc95304d308eccdd5c1186ab85a0288ff594e4d2ee57c4affb6f0b514a4b64c5b392f60237618c4a3230c10c4890ce0be4a834dde43a8277fe91>",
+      "sequence": 3,
+      "stage": "video_understanding",
+      "observed_request_to_choice_s": 12.801883
+    },
+    {
+      "trace": "projects/familyvlog-a8a84/traces/815b879cf4db5956eaecc12b3040f2bb",
+      "span_id": "582bfd28c0f6c848",
+      "request_timestamp_utc": "2026-08-26T23:00:18.447726Z",
+      "response_timestamp_utc": "2026-08-26T23:00:34.004662Z",
+      "finish_reason": "stop",
+      "input_media_fingerprint": "video/mp4<sha51292ea0ac760dc64347bcac3544aef638143deef591f7dec8eb2173ed55a238d5006aa8ff68bc09fa09a0b70a7cdd9c4ab2b80fdb3777810e8e10949da0f59dc49>",
+      "sequence": 4,
+      "stage": "video_understanding",
+      "observed_request_to_choice_s": 15.556936
+    },
+    {
+      "trace": "projects/familyvlog-a8a84/traces/1d3630d9d06d9eeadec5ff7104e9f60f",
+      "span_id": "a6fa7ade0470b887",
+      "request_timestamp_utc": "2026-08-26T23:01:08.144258Z",
+      "response_timestamp_utc": "2026-08-26T23:01:18.494153Z",
+      "finish_reason": "stop",
+      "input_media_fingerprint": "video/mp4<sha512c0ad7d10ccd9f07eb9639361cd71ac65f17d4a0cf0b126f569e92dc4e001249a5ef4973eb36bc1060ed5be98ff9a480f33924d9b3dd6392fc38dce91ff1a97c9>",
+      "sequence": 5,
+      "stage": "video_understanding",
+      "observed_request_to_choice_s": 10.349895
+    },
+    {
+      "trace": "projects/familyvlog-a8a84/traces/bd75a99e62c3886963b9fc5e06ec1676",
+      "span_id": "123629fccf113c28",
+      "request_timestamp_utc": "2026-08-26T23:01:31.856685Z",
+      "response_timestamp_utc": "2026-08-26T23:01:40.493602Z",
+      "finish_reason": "stop",
+      "input_media_fingerprint": "video/mp4<sha5121acd5c54cafc214cfb48fc8dbca803b1a4198d672fbdfe5f2b34ff0ab29a54b17cb9cd2c00f8cfcbacb9f5c7dd947944e59c43f8b9a3d6745ec5d4ea69cd36f9>",
+      "sequence": 6,
+      "stage": "video_understanding",
+      "observed_request_to_choice_s": 8.636917
+    },
+    {
+      "trace": "projects/familyvlog-a8a84/traces/9c8939dbc8717b5880ec3a21ef4996d9",
+      "span_id": "6fe9e66542062bda",
+      "request_timestamp_utc": "2026-08-26T23:01:41.088728Z",
+      "response_timestamp_utc": "2026-08-26T23:01:51.048492Z",
+      "finish_reason": "stop",
+      "input_media_fingerprint": null,
+      "sequence": 7,
+      "stage": "story_planning",
+      "observed_request_to_choice_s": 9.959764
+    }
+  ],
+  "totals": {
+    "cloud_stage_wall_span_s": 191.092807,
+    "summed_observed_request_to_choice_s": 75.535327,
+    "between_call_and_phone_processing_gap_s": 115.557480
+  },
+  "interpretation": {
+    "observed_span_definition": "Cloud activity timestamp from gen_ai.user.message to the matching gen_ai.choice.",
+    "warning": "Observed spans are not guaranteed to equal pure model compute time."
+  }
+}

@@ -1,0 +1,7 @@
+  File: /storage/emulated/0/Movies/family-vlog-subtitled-2ddc956c-0cdf-4398-a25c-30dd39e3bd7c.mp4
+  Size: 23216797	 Blocks: 45400	 IO Blocks: 512	 regular file
+Device: b4h/180d	 Inode: 229187	 Links: 1	 Device type: 0,0
+Access: (0770/-rwxrwx---)	Uid: (10264/ u0_a264)	Gid: ( 1023/media_rw)
+Access: 2026-08-27 06:02:14.265913949 +0700
+Modify: 2026-08-27 06:02:14.345913949 +0700
+Change: 2026-08-27 06:02:14.437913949 +0700

@@ -1,0 +1,5 @@
+.gcloudignore
+__pycache__/
+*.py[cod]
+README.md
+test_main.py

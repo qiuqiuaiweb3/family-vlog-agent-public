@@ -1,0 +1,1 @@
+Row: 0 _id=1000001543, _display_name=family-vlog-9477c41f-f393-4344-81f4-c0c3c42c33cc.mp4, date_added=1787785317, date_modified=1787785317, duration=20895, _size=23421094, mime_type=video/mp4, relative_path=Movies/, is_pending=0

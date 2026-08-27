@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "service_scope": "Frozen read-only aggregate evidence; not live telemetry, media hosting, or an Android runtime dependency.",
+  "project": {
+    "name": "Family Vlog Agent",
+    "application_id": "com.chill.familyvlog",
+    "category": "Taskmaster"
+  },
+  "google_technology": {
+    "agent_framework": "ADK Kotlin Android 0.8.0",
+    "model": "gemini-3.6-flash",
+    "model_location": "global",
+    "model_access": "Firebase AI Logic to Agent Platform Gemini API",
+    "evidence_service": "Cloud Run"
+  },
+  "verified_run": {
+    "first_cloud_request_utc": "2026-08-26T22:58:39.955685Z",
+    "final_story_plan_choice_utc": "2026-08-26T23:01:51.048492Z",
+    "original_output_file_utc": "2026-08-26T23:01:57.249913948Z",
+    "original_source_count": 4,
+    "original_source_duration_s": 46.796666,
+    "prepared_video_window_count": 6,
+    "identified_event_count": 11,
+    "selected_event_count": 5,
+    "video_understanding_call_count": 6,
+    "story_planning_call_count": 1,
+    "total_model_call_count": 7,
+    "planned_output_duration_s": 20.866667,
+    "actual_output_duration_s": 20.895,
+    "likely_create_interaction_to_original_output_file_s": 220.339913948,
+    "first_cloud_request_to_final_story_plan_choice_s": 191.092807,
+    "summed_observed_request_to_choice_s": 75.535327,
+    "final_story_plan_choice_to_original_output_file_s": 6.201421948
+  },
+  "timing_semantics": {
+    "likely_create_interaction": "Time-correlation inference; the Android log records the touch interaction but not the touched control name.",
+    "summed_observed_request_to_choice_s": "Sum of seven Cloud activity user-message-to-choice spans; not pure model or accelerator compute time.",
+    "final_story_plan_choice_to_original_output_file_s": "Interval between directly observed milestones; not a measurement of pure local editing compute time."
+  },
+  "provenance": {
+    "evidence_capture_utc": "2026-08-27T19:28:01Z",
+    "evidence_source_commit": "c422a52f1e26dd8f285667519a993a6799232ce3",
+    "public_snapshot_ref": "submission-v1",
+    "run_timeline_sha256": "11252578b3366ad700c37340d299136ba4f745efd49f243d32d6f0eed24456cd",
+    "call_summary_sha256": "c70576d4b28af17fe90fb96463b99a056f963e71868365bd11b90d180d86147b",
+    "evidence_index": "https://github.com/qiuqiuaiweb3/family-vlog-agent-public/tree/submission-v1/execution-evidence"
+  },
+  "privacy": {
+    "contains_media_bytes": false,
+    "contains_prompts_or_responses": false,
+    "contains_inline_data": false,
+    "contains_private_device_or_account_identifiers": false,
+    "contains_local_paths_or_private_content_uris": false,
+    "contains_trace_or_span_identifiers": false
+  }
+}
